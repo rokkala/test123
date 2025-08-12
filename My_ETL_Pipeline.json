@@ -22,45 +22,16 @@
       "outputFieldsByPort": {
         "data": []
       }
-    },
-    {
-      "id": "filter-1754967720263",
-      "type": "filter",
-      "position": {
-        "x": 648,
-        "y": 347
-      },
-      "data": {
-        "label": "Filter",
-        "nodeType": "filter",
-        "config": {
-          "inputFields": []
-        }
-      },
-      "nodeType": "filter",
-      "nodename": "",
-      "outputPorts": [
-        "data"
-      ],
-      "outputFieldsByPort": {
-        "data": []
-      }
     }
   ],
-  "connections": [
-    {
-      "id": "conn-1754967722207",
-      "source": "CsvInput-1754963418679",
-      "target": "filter-1754967720263",
-      "sourcePort": "data",
-      "targetPort": "data"
-    }
-  ],
+  "connections": [],
+  "targetLanguage": "pyspark",
   "config": {
     "targetLanguage": "pyspark",
     "version": "1.0.1",
     "previousVersion": "1.0.0",
-    "lastModified": "2025-08-12T03:02:04.968Z",
-    "changeCount": 1
+    "lastModified": "2025-08-12T03:27:53.910Z",
+    "changeCount": 1,
+    "saveComment": "ddd"
   }
 }
