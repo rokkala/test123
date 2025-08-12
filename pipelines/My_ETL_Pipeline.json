@@ -1,0 +1,32 @@
+{
+  "name": "My ETL Pipeline",
+  "description": "Pipeline created with ETL Pipeline Builder",
+  "nodes": [
+    {
+      "id": "CsvInput-1754963418679",
+      "type": "CsvInput",
+      "position": {
+        "x": 391,
+        "y": 261
+      },
+      "data": {
+        "label": "CsvInput",
+        "nodeType": "CsvInput",
+        "config": {}
+      },
+      "nodeType": "CsvInput",
+      "nodename": "",
+      "outputPorts": [
+        "data"
+      ],
+      "outputFieldsByPort": {
+        "data": []
+      }
+    }
+  ],
+  "connections": [],
+  "config": {
+    "targetLanguage": "pyspark",
+    "version": "1.0.0"
+  }
+}
