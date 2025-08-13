@@ -6,45 +6,386 @@
       "id": "CsvInput-1754963418679",
       "type": "CsvInput",
       "position": {
-        "x": 391,
-        "y": 261
+        "x": 223,
+        "y": 246
       },
       "data": {
         "label": "CsvInput",
         "nodeType": "CsvInput",
-        "config": {}
+        "config": {
+          "fields": [
+            {
+              "name": "Company",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Date",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Vendor",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Category",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Business Unit",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Spend Amount",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Spend Band",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Risk Level",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Maverick Spend",
+              "type": "string",
+              "format": "",
+              "length": ""
+            }
+          ],
+          "uploadedFileName": "reynolds_spend_data.csv",
+          "uploadedFile": {},
+          "filePath": "reynolds_spend_data.csv",
+          "delimiter": ","
+        }
       },
       "nodeType": "CsvInput",
-      "nodename": "",
+      "nodename": "cc",
       "outputPorts": [
         "data"
       ],
       "outputFieldsByPort": {
-        "data": []
+        "data": [
+          {
+            "name": "Company",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Date",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Vendor",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Category",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Business Unit",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Amount",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Band",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Risk Level",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Maverick Spend",
+            "type": "string",
+            "length": ""
+          }
+        ]
       }
     },
     {
       "id": "filter-1754969906963",
       "type": "filter",
       "position": {
-        "x": 758,
-        "y": 300
+        "x": 501,
+        "y": 250
       },
       "data": {
         "label": "Filter",
         "nodeType": "filter",
         "config": {
-          "inputFields": []
+          "inputFields": [
+            {
+              "name": "Company",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Date",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Vendor",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Category",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Business Unit",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Amount",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Band",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Risk Level",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Maverick Spend",
+              "type": "string",
+              "length": ""
+            }
+          ],
+          "fields": [],
+          "groups": [
+            {
+              "logic": "AND",
+              "rules": [
+                {
+                  "field": "Company",
+                  "operator": "equals",
+                  "value": "1",
+                  "valueType": "constant"
+                }
+              ]
+            }
+          ]
         }
       },
       "nodeType": "filter",
-      "nodename": "",
+      "nodename": "ddd",
       "outputPorts": [
         "data"
       ],
       "outputFieldsByPort": {
-        "data": []
+        "data": [
+          {
+            "name": "Company",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Date",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Vendor",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Category",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Business Unit",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Amount",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Band",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Risk Level",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Maverick Spend",
+            "type": "string",
+            "length": ""
+          }
+        ]
       }
+    },
+    {
+      "id": "transformer-1755098306114",
+      "type": "transformer",
+      "position": {
+        "x": 798,
+        "y": 254
+      },
+      "data": {
+        "label": "Transformer",
+        "nodeType": "transformer",
+        "config": {
+          "fields": [],
+          "inputColumns": [
+            {
+              "name": "Company",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Date",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Vendor",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Category",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Business Unit",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Amount",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Band",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Risk Level",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Maverick Spend",
+              "type": "string",
+              "length": ""
+            }
+          ],
+          "outputFields": [
+            {
+              "name": "Company",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Date",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Vendor",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Category",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Business Unit",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Amount",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Band",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Risk Level",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Maverick Spend",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Company_substr",
+              "type": "string",
+              "length": null
+            }
+          ],
+          "nodename": "ddd",
+          "operations": [
+            {
+              "field": "",
+              "newField": "Company_substr",
+              "op": "trim",
+              "param1": "",
+              "param2": "",
+              "expression": "substr($Company,1,2)",
+              "type": "string",
+              "length": null
+            }
+          ]
+        }
+      },
+      "nodeType": "transformer"
     }
   ],
   "connections": [
@@ -54,15 +395,22 @@
       "target": "filter-1754969906963",
       "sourcePort": "data",
       "targetPort": "data"
+    },
+    {
+      "id": "conn-1755098310725",
+      "source": "filter-1754969906963",
+      "target": "transformer-1755098306114",
+      "sourcePort": "data",
+      "targetPort": "data"
     }
   ],
-  "targetLanguage": "pyspark",
+  "targetLanguage": "snowflake",
   "config": {
-    "targetLanguage": "pyspark",
-    "version": "1.0.1",
-    "previousVersion": "1.0.0",
-    "lastModified": "2025-08-12T03:38:36.964Z",
-    "changeCount": 1,
-    "saveComment": "ggg"
+    "targetLanguage": "snowflake",
+    "version": "1.0.2",
+    "previousVersion": "1.0.1",
+    "lastModified": "2025-08-13T15:48:52.700Z",
+    "changeCount": 2,
+    "saveComment": "Pipeline updated"
   }
 }
