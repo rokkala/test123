@@ -1,0 +1,144 @@
+{
+  "name": "dddd",
+  "description": "Pipeline created with ETL Pipeline Builder",
+  "nodes": [
+    {
+      "id": "CsvInput-1755132018172",
+      "type": "CsvInput",
+      "position": {
+        "x": 287,
+        "y": 273
+      },
+      "data": {
+        "label": "CsvInput",
+        "nodeType": "CsvInput",
+        "config": {
+          "fields": [
+            {
+              "name": "Company",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Date",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Vendor",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Category",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Business Unit",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Spend Amount",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Spend Band",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Risk Level",
+              "type": "string",
+              "format": "",
+              "length": ""
+            },
+            {
+              "name": "Maverick Spend",
+              "type": "string",
+              "format": "",
+              "length": ""
+            }
+          ],
+          "uploadedFileName": "reynolds_spend_data.csv",
+          "uploadedFile": {},
+          "filePath": "reynolds_spend_data.csv",
+          "delimiter": ","
+        }
+      },
+      "nodeType": "CsvInput",
+      "nodename": "ddd",
+      "outputPorts": [
+        "data"
+      ],
+      "outputFieldsByPort": {
+        "data": [
+          {
+            "name": "Company",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Date",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Vendor",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Category",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Business Unit",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Amount",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Band",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Risk Level",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Maverick Spend",
+            "type": "string",
+            "length": ""
+          }
+        ]
+      }
+    }
+  ],
+  "connections": [],
+  "targetLanguage": "pyspark",
+  "config": {
+    "targetLanguage": "pyspark",
+    "version": "1.0.1",
+    "previousVersion": "1.0.0",
+    "lastModified": "2025-08-14T00:40:46.521Z",
+    "changeCount": 1,
+    "saveComment": "Pipeline updated"
+  }
+}
