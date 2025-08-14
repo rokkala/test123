@@ -72,7 +72,54 @@
           "nodename": "ddd",
           "uploadedFileName": "reynolds_spend_data.csv",
           "filePath": "reynolds_spend_data.csv",
-          "delimiter": ","
+          "delimiter": ",",
+          "outputFields": [
+            {
+              "name": "Company",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Date",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Vendor",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Category",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Business Unit",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Amount",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Band",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Risk Level",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Maverick Spend",
+              "type": "string",
+              "length": ""
+            }
+          ]
         }
       },
       "nodeType": "CsvInput",
@@ -313,10 +360,10 @@
   "targetLanguage": "pyspark",
   "config": {
     "targetLanguage": "pyspark",
-    "version": "1.0.4",
-    "previousVersion": "1.0.3",
-    "lastModified": "2025-08-14T01:09:50.868Z",
-    "changeCount": 4,
+    "version": "1.0.5",
+    "previousVersion": "1.0.4",
+    "lastModified": "2025-08-14T01:12:37.892Z",
+    "changeCount": 5,
     "saveComment": "Pipeline updated"
   }
 }
