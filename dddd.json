@@ -71,7 +71,8 @@
           ],
           "uploadedFileName": "reynolds_spend_data.csv",
           "filePath": "reynolds_spend_data.csv",
-          "delimiter": ","
+          "delimiter": ",",
+          "nodename": "ddd"
         }
       },
       "nodeType": "CsvInput",
@@ -204,58 +205,12 @@
         }
       },
       "nodeType": "filter",
-      "nodename": "ddd",
+      "nodename": "",
       "outputPorts": [
         "data"
       ],
       "outputFieldsByPort": {
-        "data": [
-          {
-            "name": "Company",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Date",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Vendor",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Category",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Business Unit",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Spend Amount",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Spend Band",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Risk Level",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Maverick Spend",
-            "type": "string",
-            "length": ""
-          }
-        ]
+        "data": []
       }
     },
     {
@@ -286,7 +241,10 @@
           ]
         }
       },
-      "nodeType": "switch_case"
+      "nodeType": "switch_case",
+      "nodename": "off",
+      "outputPorts": [],
+      "outputFieldsByPort": {}
     },
     {
       "id": "sort-1755135072747",
@@ -335,10 +293,10 @@
   "targetLanguage": "pyspark",
   "config": {
     "targetLanguage": "pyspark",
-    "version": "1.0.7",
-    "previousVersion": "1.0.6",
-    "lastModified": "2025-08-14T01:31:23.504Z",
-    "changeCount": 7,
+    "version": "1.0.8",
+    "previousVersion": "1.0.7",
+    "lastModified": "2025-08-14T01:35:49.710Z",
+    "changeCount": 8,
     "saveComment": "Pipeline updated"
   }
 }
