@@ -201,16 +201,63 @@
                 }
               ]
             }
-          ]
+          ],
+          "nodename": "ddd"
         }
       },
       "nodeType": "filter",
-      "nodename": "",
+      "nodename": "ddd",
       "outputPorts": [
         "data"
       ],
       "outputFieldsByPort": {
-        "data": []
+        "data": [
+          {
+            "name": "Company",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Date",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Vendor",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Category",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Business Unit",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Amount",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Band",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Risk Level",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Maverick Spend",
+            "type": "string",
+            "length": ""
+          }
+        ]
       }
     },
     {
@@ -293,10 +340,10 @@
   "targetLanguage": "pyspark",
   "config": {
     "targetLanguage": "pyspark",
-    "version": "1.0.8",
-    "previousVersion": "1.0.7",
-    "lastModified": "2025-08-14T01:35:49.710Z",
-    "changeCount": 8,
+    "version": "1.0.9",
+    "previousVersion": "1.0.8",
+    "lastModified": "2025-08-14T01:36:10.952Z",
+    "changeCount": 9,
     "saveComment": "Pipeline updated"
   }
 }
