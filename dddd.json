@@ -69,57 +69,9 @@
               "length": ""
             }
           ],
-          "nodename": "ddd",
           "uploadedFileName": "reynolds_spend_data.csv",
           "filePath": "reynolds_spend_data.csv",
-          "delimiter": ",",
-          "outputFields": [
-            {
-              "name": "Company",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Date",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Vendor",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Category",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Business Unit",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Spend Amount",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Spend Band",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Risk Level",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Maverick Spend",
-              "type": "string",
-              "length": ""
-            }
-          ]
+          "delimiter": ","
         }
       },
       "nodeType": "CsvInput",
@@ -236,54 +188,6 @@
             }
           ],
           "fields": [],
-          "outputFields": [
-            {
-              "name": "Company",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Date",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Vendor",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Category",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Business Unit",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Spend Amount",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Spend Band",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Risk Level",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Maverick Spend",
-              "type": "string",
-              "length": ""
-            }
-          ],
-          "nodename": "ddd",
           "groups": [
             {
               "logic": "AND",
@@ -353,6 +257,56 @@
           }
         ]
       }
+    },
+    {
+      "id": "switch_case-1755135051085",
+      "type": "switch_case",
+      "position": {
+        "x": 565,
+        "y": 412
+      },
+      "data": {
+        "label": "Switch_case",
+        "nodeType": "switch_case",
+        "config": {
+          "fields": [],
+          "outputFields": [],
+          "nodename": "off",
+          "switchField": "Company",
+          "cases": [
+            {
+              "type": "value",
+              "value": "ddd",
+              "rangeFrom": "",
+              "rangeTo": "",
+              "expression": "",
+              "output": "",
+              "label": "ddddd"
+            }
+          ]
+        }
+      },
+      "nodeType": "switch_case"
+    },
+    {
+      "id": "sort-1755135072747",
+      "type": "sort",
+      "position": {
+        "x": 790,
+        "y": 574
+      },
+      "data": {
+        "label": "Sort",
+        "nodeType": "sort",
+        "config": {}
+      },
+      "nodeType": "sort",
+      "outputPorts": [
+        "data"
+      ],
+      "outputFieldsByPort": {
+        "data": []
+      }
     }
   ],
   "connections": [
@@ -362,15 +316,29 @@
       "target": "filter-1755134159696",
       "sourcePort": "data",
       "targetPort": "data"
+    },
+    {
+      "id": "conn-1755135053156",
+      "source": "filter-1755134159696",
+      "target": "switch_case-1755135051085",
+      "sourcePort": "data",
+      "targetPort": "data"
+    },
+    {
+      "id": "conn-1755135074687",
+      "source": "switch_case-1755135051085",
+      "target": "sort-1755135072747",
+      "sourcePort": "data",
+      "targetPort": "data"
     }
   ],
   "targetLanguage": "pyspark",
   "config": {
     "targetLanguage": "pyspark",
-    "version": "1.0.6",
-    "previousVersion": "1.0.5",
-    "lastModified": "2025-08-14T01:16:14.827Z",
-    "changeCount": 6,
+    "version": "1.0.7",
+    "previousVersion": "1.0.6",
+    "lastModified": "2025-08-14T01:31:23.504Z",
+    "changeCount": 7,
     "saveComment": "Pipeline updated"
   }
 }
