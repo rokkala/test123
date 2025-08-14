@@ -131,17 +131,18 @@
       }
     },
     {
-      "id": "filter-1755133679783",
-      "type": "filter",
+      "id": "sort-1755133761883",
+      "type": "sort",
       "position": {
-        "x": 594,
-        "y": 307
+        "x": 474,
+        "y": 284
       },
       "data": {
-        "label": "Filter",
-        "nodeType": "filter",
+        "label": "Sort",
+        "nodeType": "sort",
         "config": {
-          "inputFields": [
+          "fields": [],
+          "outputFields": [
             {
               "name": "Company",
               "type": "string",
@@ -187,24 +188,124 @@
               "type": "string",
               "length": ""
             }
-          ]
+          ],
+          "inputColumns": [
+            {
+              "name": "Company",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Date",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Vendor",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Category",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Business Unit",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Amount",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Band",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Risk Level",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Maverick Spend",
+              "type": "string",
+              "length": ""
+            }
+          ],
+          "sortColumns": [
+            {
+              "field": "Date",
+              "order": "asc",
+              "caseSensitive": false
+            }
+          ],
+          "nodename": "ddd"
         }
       },
-      "nodeType": "filter",
-      "nodename": "",
+      "nodeType": "sort",
       "outputPorts": [
         "data"
       ],
       "outputFieldsByPort": {
-        "data": []
+        "data": [
+          {
+            "name": "Company",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Date",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Vendor",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Category",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Business Unit",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Amount",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Band",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Risk Level",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Maverick Spend",
+            "type": "string",
+            "length": ""
+          }
+        ]
       }
     }
   ],
   "connections": [
     {
-      "id": "conn-1755133682000",
+      "id": "conn-1755133763945",
       "source": "CsvInput-1755133627162",
-      "target": "filter-1755133679783",
+      "target": "sort-1755133761883",
       "sourcePort": "data",
       "targetPort": "data"
     }
@@ -212,10 +313,10 @@
   "targetLanguage": "pyspark",
   "config": {
     "targetLanguage": "pyspark",
-    "version": "1.0.3",
-    "previousVersion": "1.0.2",
-    "lastModified": "2025-08-14T01:08:27.317Z",
-    "changeCount": 3,
+    "version": "1.0.4",
+    "previousVersion": "1.0.3",
+    "lastModified": "2025-08-14T01:09:50.868Z",
+    "changeCount": 4,
     "saveComment": "Pipeline updated"
   }
 }
