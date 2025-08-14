@@ -76,7 +76,7 @@
         }
       },
       "nodeType": "CsvInput",
-      "nodename": "sss",
+      "nodename": "ssss",
       "outputPorts": [
         "data"
       ],
@@ -192,58 +192,12 @@
         }
       },
       "nodeType": "filter",
-      "nodename": "sssss",
+      "nodename": "",
       "outputPorts": [
         "data"
       ],
       "outputFieldsByPort": {
-        "data": [
-          {
-            "name": "Company",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Date",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Vendor",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Category",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Business Unit",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Spend Amount",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Spend Band",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Risk Level",
-            "type": "string",
-            "length": ""
-          },
-          {
-            "name": "Maverick Spend",
-            "type": "string",
-            "length": ""
-          }
-        ]
+        "data": []
       }
     }
   ],
@@ -259,10 +213,10 @@
   "targetLanguage": "snowflake",
   "config": {
     "targetLanguage": "snowflake",
-    "version": "1.0.5",
-    "previousVersion": "1.0.4",
-    "lastModified": "2025-08-14T00:49:49.132Z",
-    "changeCount": 5,
+    "version": "1.0.6",
+    "previousVersion": "1.0.5",
+    "lastModified": "2025-08-14T00:53:23.419Z",
+    "changeCount": 6,
     "saveComment": "Pipeline updated"
   }
 }
