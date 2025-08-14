@@ -178,16 +178,63 @@
       }
     },
     {
-      "id": "sort-1755133761883",
-      "type": "sort",
+      "id": "filter-1755134159696",
+      "type": "filter",
       "position": {
-        "x": 474,
-        "y": 284
+        "x": 567,
+        "y": 257
       },
       "data": {
-        "label": "Sort",
-        "nodeType": "sort",
+        "label": "Filter",
+        "nodeType": "filter",
         "config": {
+          "inputFields": [
+            {
+              "name": "Company",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Date",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Vendor",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Category",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Business Unit",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Amount",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Band",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Risk Level",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Maverick Spend",
+              "type": "string",
+              "length": ""
+            }
+          ],
           "fields": [],
           "outputFields": [
             {
@@ -236,64 +283,24 @@
               "length": ""
             }
           ],
-          "inputColumns": [
+          "nodename": "ddd",
+          "groups": [
             {
-              "name": "Company",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Date",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Vendor",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Category",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Business Unit",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Spend Amount",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Spend Band",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Risk Level",
-              "type": "string",
-              "length": ""
-            },
-            {
-              "name": "Maverick Spend",
-              "type": "string",
-              "length": ""
+              "logic": "AND",
+              "rules": [
+                {
+                  "field": "Company",
+                  "operator": "equals",
+                  "value": "1",
+                  "valueType": "constant"
+                }
+              ]
             }
-          ],
-          "sortColumns": [
-            {
-              "field": "Date",
-              "order": "asc",
-              "caseSensitive": false
-            }
-          ],
-          "nodename": "ddd"
+          ]
         }
       },
-      "nodeType": "sort",
+      "nodeType": "filter",
+      "nodename": "ddd",
       "outputPorts": [
         "data"
       ],
@@ -350,9 +357,9 @@
   ],
   "connections": [
     {
-      "id": "conn-1755133763945",
+      "id": "conn-1755134161540",
       "source": "CsvInput-1755133627162",
-      "target": "sort-1755133761883",
+      "target": "filter-1755134159696",
       "sourcePort": "data",
       "targetPort": "data"
     }
@@ -360,10 +367,10 @@
   "targetLanguage": "pyspark",
   "config": {
     "targetLanguage": "pyspark",
-    "version": "1.0.5",
-    "previousVersion": "1.0.4",
-    "lastModified": "2025-08-14T01:12:37.892Z",
-    "changeCount": 5,
+    "version": "1.0.6",
+    "previousVersion": "1.0.5",
+    "lastModified": "2025-08-14T01:16:13.696Z",
+    "changeCount": 6,
     "saveComment": "Pipeline updated"
   }
 }
