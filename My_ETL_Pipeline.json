@@ -253,8 +253,8 @@
       "id": "switch_case-1755129993470",
       "type": "switch_case",
       "position": {
-        "x": 821,
-        "y": 445
+        "x": 486,
+        "y": 455
       },
       "data": {
         "label": "Switch_case",
@@ -386,13 +386,15 @@
               "output": "",
               "label": "cc2"
             }
-          ]
+          ],
+          "defaultOutput": "default"
         }
       },
       "nodeType": "switch_case",
       "outputPorts": [
         "cc1",
-        "cc2"
+        "cc2",
+        "default"
       ],
       "outputFieldsByPort": {
         "cc1": [
@@ -498,21 +500,74 @@
             "type": "string",
             "length": null
           }
+        ],
+        "default": [
+          {
+            "name": "Company",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Date",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Vendor",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Category",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Business Unit",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Amount",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Band",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Risk Level",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Maverick Spend",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Company_substr",
+            "type": "string",
+            "length": null
+          }
         ]
       }
     },
     {
-      "id": "filter-1755130023891",
-      "type": "filter",
+      "id": "sort-1755130868048",
+      "type": "sort",
       "position": {
-        "x": 445,
-        "y": 673
+        "x": 827,
+        "y": 531
       },
       "data": {
-        "label": "Filter",
-        "nodeType": "filter",
+        "label": "Sort",
+        "nodeType": "sort",
         "config": {
-          "inputFields": [
+          "fields": [],
+          "outputFields": [
             {
               "name": "Company",
               "type": "string",
@@ -563,16 +618,120 @@
               "type": "string",
               "length": null
             }
-          ]
+          ],
+          "inputColumns": [
+            {
+              "name": "Company",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Date",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Vendor",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Category",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Business Unit",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Amount",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Band",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Risk Level",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Maverick Spend",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Company_substr",
+              "type": "string",
+              "length": null
+            }
+          ],
+          "selectedInputPort": "default",
+          "nodename": "ggg"
         }
       },
-      "nodeType": "filter",
-      "nodename": "",
+      "nodeType": "sort",
       "outputPorts": [
         "data"
       ],
       "outputFieldsByPort": {
-        "data": []
+        "data": [
+          {
+            "name": "Company",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Date",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Vendor",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Category",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Business Unit",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Amount",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Spend Band",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Risk Level",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Maverick Spend",
+            "type": "string",
+            "length": ""
+          },
+          {
+            "name": "Company_substr",
+            "type": "string",
+            "length": null
+          }
+        ]
       }
     }
   ],
@@ -599,20 +758,20 @@
       "targetPort": "data"
     },
     {
-      "id": "conn-1755130026238",
+      "id": "conn-1755130870791",
       "source": "switch_case-1755129993470",
-      "target": "filter-1755130023891",
-      "sourcePort": "default",
+      "target": "sort-1755130868048",
+      "sourcePort": "cc1",
       "targetPort": "data"
     }
   ],
   "targetLanguage": "snowflake",
   "config": {
     "targetLanguage": "snowflake",
-    "version": "1.0.3",
-    "previousVersion": "1.0.2",
-    "lastModified": "2025-08-14T00:07:23.433Z",
-    "changeCount": 3,
+    "version": "1.0.4",
+    "previousVersion": "1.0.3",
+    "lastModified": "2025-08-14T00:21:51.666Z",
+    "changeCount": 4,
     "saveComment": "Pipeline updated"
   }
 }
