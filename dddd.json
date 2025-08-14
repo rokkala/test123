@@ -72,7 +72,54 @@
           "uploadedFileName": "reynolds_spend_data.csv",
           "filePath": "reynolds_spend_data.csv",
           "delimiter": ",",
-          "nodename": "ddd"
+          "nodename": "ddd",
+          "outputFields": [
+            {
+              "name": "Company",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Date",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Vendor",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Category",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Business Unit",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Amount",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Band",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Risk Level",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Maverick Spend",
+              "type": "string",
+              "length": ""
+            }
+          ]
         }
       },
       "nodeType": "CsvInput",
@@ -202,7 +249,54 @@
               ]
             }
           ],
-          "nodename": "ddd"
+          "nodename": "ddd",
+          "outputFields": [
+            {
+              "name": "Company",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Date",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Vendor",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Category",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Business Unit",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Amount",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Spend Band",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Risk Level",
+              "type": "string",
+              "length": ""
+            },
+            {
+              "name": "Maverick Spend",
+              "type": "string",
+              "length": ""
+            }
+          ]
         }
       },
       "nodeType": "filter",
@@ -340,10 +434,10 @@
   "targetLanguage": "pyspark",
   "config": {
     "targetLanguage": "pyspark",
-    "version": "1.0.9",
-    "previousVersion": "1.0.8",
-    "lastModified": "2025-08-14T01:36:10.952Z",
-    "changeCount": 9,
+    "version": "1.0.10",
+    "previousVersion": "1.0.9",
+    "lastModified": "2025-08-14T01:38:21.599Z",
+    "changeCount": 10,
     "saveComment": "Pipeline updated"
   }
 }
