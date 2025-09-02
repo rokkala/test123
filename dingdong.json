@@ -12,10 +12,15 @@
       "data": {
         "label": "CsvInput",
         "nodeType": "CsvInput",
-        "config": {}
+        "config": {
+          "fields": [],
+          "outputFields": [],
+          "delimiter": ",",
+          "nodename": "ddd"
+        }
       },
       "nodeType": "CsvInput",
-      "nodename": "",
+      "nodename": "ddd",
       "outputPorts": [
         "data"
       ],
@@ -28,10 +33,10 @@
   "targetLanguage": "pyspark",
   "config": {
     "targetLanguage": "pyspark",
-    "version": "1.0.1",
-    "previousVersion": "1.0.0",
-    "lastModified": "2025-09-02T15:06:00.170Z",
-    "changeCount": 1,
+    "version": "1.0.2",
+    "previousVersion": "1.0.1",
+    "lastModified": "2025-09-02T15:11:24.206Z",
+    "changeCount": 2,
     "saveComment": "Pipeline updated"
   }
 }
