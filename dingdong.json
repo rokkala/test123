@@ -1,0 +1,37 @@
+{
+  "name": "dingdong",
+  "description": "Pipeline created with ETL Pipeline Builder",
+  "nodes": [
+    {
+      "id": "CsvInput-1756825550558",
+      "type": "CsvInput",
+      "position": {
+        "x": 199,
+        "y": 170
+      },
+      "data": {
+        "label": "CsvInput",
+        "nodeType": "CsvInput",
+        "config": {}
+      },
+      "nodeType": "CsvInput",
+      "nodename": "",
+      "outputPorts": [
+        "data"
+      ],
+      "outputFieldsByPort": {
+        "data": []
+      }
+    }
+  ],
+  "connections": [],
+  "targetLanguage": "pyspark",
+  "config": {
+    "targetLanguage": "pyspark",
+    "version": "1.0.1",
+    "previousVersion": "1.0.0",
+    "lastModified": "2025-09-02T15:06:00.170Z",
+    "changeCount": 1,
+    "saveComment": "Pipeline updated"
+  }
+}
